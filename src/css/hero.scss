@@ -1,0 +1,87 @@
+// Hero
+.section {
+    padding: 2em 0;
+}
+
+.hero {
+    background-image: url(../static/vitae-hero.jpg);
+    background-position: bottom center;
+    background-attachment: fixed;
+    height: 475px;
+}
+
+
+.info {
+    background-color: $darkgray;
+    color: $white;
+
+    h3 {
+        color: $mint;
+    }
+}
+
+
+.order {
+    background-color: $lightgray;
+
+    .order-form {
+        padding-top: 2em;
+
+        label > span {
+            display: block;
+            padding-top: 0.6em;
+        }
+
+        input {
+            width: 95%;
+            border: none;
+            padding: 0.5em;
+            margin: 0.5em 0;
+
+            &.order-form__street-address {
+                width: 97%;
+            }
+
+            &:focus {
+                outline: none;
+                background-color: $mint;
+            }
+        }
+    }
+
+    .order__summary {
+        padding: 3em 0 2em;
+
+        table {
+            margin: 0 auto;
+
+            th {
+                text-align: left;
+                border-bottom: 1px solid $darkgray;
+            }
+
+            .order__summary__total {
+                border-top: 1px solid $darkgray;
+                font-size: 135%;
+            }
+            th,
+            tr {
+                margin: 0.25em;
+                width: 50%;
+            }
+
+            td {
+                padding: 0.4em;
+            }
+
+        }
+    }
+}
+
+.footer {
+    padding: 2em 0;
+    height: 150px;
+    background-image: url(../static/vitae-hero.jpg);
+    background-position: 50% 15%;
+    background-attachment: fixed;
+}
