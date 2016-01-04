@@ -4,10 +4,141 @@
     <meta charset="UTF-8">
     <title>Document</title>
 </head>
+<!-- bower:css -->
+<link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
+<!-- endbower -->
+<!-- Google fonts -->
+<link href='https://fonts.googleapis.com/css?family=Kadwa|Oxygen' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="css/main.css">
+
 <body>
 
-    <h1>Hello mom.</h1>
-<script src="js/main.js"></script>
+    <div class="">
+
+        <div class="hero section">
+            <div class="container">
+                <div class="row">
+                    <div class="column-3">hello</div>
+                    <div class="column-3">hello</div>
+                    <div class="column-3">hello</div>
+                    <div class="column-3">hello</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="info section">
+            <div class="container">
+                <div class="row">
+                    <div class="column-5">
+                        <img src="static/bottles.png" alt="VITAE bottles">
+                    </div>
+                    <div class="column-7">
+                        <h2>What is VITAE</h2>
+                        <h3>This is a question or a statement</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacinia orci ac quam tincidunt, et sollicitudin eros vehicula. Donec finibus at urna quis blandit. Donec pellentesque nibh eu sagittis fringilla. Vivamus et consequat felis, id aliquet dolor. Morbi nec mauris scelerisque, pellentesque risus a, interdum dolor.</p>
+                        <h3>This is a question or a statement</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacinia orci ac quam tincidunt, et sollicitudin eros vehicula. Donec finibus at urna quis blandit. Donec pellentesque nibh eu sagittis fringilla. Vivamus et consequat felis, id aliquet dolor. Morbi nec mauris scelerisque, pellentesque risus a, interdum dolor.</p>
+                        <h3>This is a question or a statement</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacinia orci ac quam tincidunt, et sollicitudin eros vehicula. Donec finibus at urna quis blandit. Donec pellentesque nibh eu sagittis fringilla. Vivamus et consequat felis, id aliquet dolor. Morbi nec mauris scelerisque, pellentesque risus a, interdum dolor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order section">
+            <div class="container">
+                <div class="row">
+                    <div class="column-2">product image</div>
+                    <div class="column-5">description</div>
+                    <div class="column-5">select bottle</div>
+                </div>
+                <div class="row order-form" id="order-form">
+                    <div class="column-6">
+                        <div class="row">
+                            <div class="column-6">
+                                <label for="order-form__first-name">
+                                    <span>First Name</span>
+                                    <input type="text" id="order-form__first-name" placeholder="First Name" />
+                                </label>
+                            </div>
+
+                            <div class="column-6">
+                                <label for="order-form__last-name">
+                                    <span>Last Name</span>
+                                    <input type="text" id="order-form__last-name" placeholder="Last Name" />
+                                </label>
+                            </div>
+                        </div>
+                        <!-- Address -->
+                        <div class="row">
+                            <div class="column-12">
+                            <label for="order-form__street-address-1">
+                                <span>Street Address</span>
+                                <input type="text" class="order-form__street-address" id="order-form__street-address-1" placeholder="Street Address line 1" />
+                            </label>
+                            <label for="order-form__address-2">
+                                <input type="text" class="order-form__street-address" id="order-form__street-address-2" placeholder="Street Address line 2" />
+                            </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column-8">
+                                <label for="order-form__city">
+                                    <span>City</span>
+                                    <input type="text" id="order-form__street-address-1" placeholder="City" />
+                                </label>
+                            </div>
+                            <div class="column-4">
+                                <label for="order-form__state">
+                                    <span>State</span>
+                                    <input type="text" id="order-form__state" placeholder="State" />
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column-3">
+                                <label for="order-form__zip-code">
+                                    <span>Zip</span>
+                                    <input type="text" id="order-form__zip-code" placeholder="Zip code" />
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-5 push-1">
+                        <div id="order__summary" class="order__summary">
+                            <table>
+                                <th colspan="2" class="order__summary__heading"> Your Order</th>
+                                <tr class="order__summary__item">
+                                    <td>Item</td>
+                                    <td>Price</td>
+                                </tr>
+                                <tr class="order__summary__item">
+                                    <td>Estimate Tax</td>
+                                    <td>Price</td>
+                                </tr>
+
+                                <tr id="order__summary__total" class="order__summary__total">
+                                    <td>Total</td>
+                                    <td>Price</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="order__purchase">
+                            <button class="btn order__purchase__btn btn--green">Purchase</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+
+        </footer>
+    </div>
+
+    <!-- bower:js -->
+    <script src="../bower_components/jquery-1.11.3.min/index.js"></script>
+    <!-- endbower -->
+    <script src="js/main.js"></script>
 </body>
 </html>
