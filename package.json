@@ -10,6 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "grunt": "^0.4.5",
+    "grunt-bower": "^0.20.0",
     "grunt-contrib-clean": "^0.7.0",
     "grunt-contrib-concat": "^0.5.1",
     "grunt-contrib-copy": "^0.8.2",
@@ -20,6 +21,7 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-express": "^1.4.1",
     "grunt-open": "^0.2.3",
-    "grunt-parallel": "^0.4.1"
+    "grunt-parallel": "^0.4.1",
+    "grunt-wiredep": "^2.0.0"
   }
 }
