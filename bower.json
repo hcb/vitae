@@ -1,0 +1,23 @@
+{
+  "name": "vitae",
+  "description": "A beverage like no other",
+  "main": "index.js",
+  "authors": [
+    "hillary"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-1.11.3.min": "http://code.jquery.com/jquery-1.11.3.min.js",
+    "normalize-css": "normalize.css#~3.0.3"
+  }
+}
