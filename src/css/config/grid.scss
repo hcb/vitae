@@ -1,0 +1,78 @@
+// Grid
+
+// Variables
+$cols: 12;
+$gutter: 0.75%;
+
+$breakpoint-sm: "only screen and (max-width: 767px)";
+$breakpoint-lg: "only screen and (min-width: 768px)";
+
+
+$max-width: 970px;
+
+// Clearfix
+%clearfix {
+    *zoom: 1;
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+
+// Grid
+
+.container,
+.row {
+    @extend %clearfix;
+}
+
+.container {
+    max-width: $max-width;
+    margin: 0 auto;
+    position: relative;
+}
+
+[class*='column-'] {
+    float: left;
+    width: 100%;
+    margin: 0 $gutter;
+}
+
+
+@for $i from 1 through $cols {
+    $col-width: 100% / $cols * $i - 2 * $gutter;
+    .column-#{$i} {
+        width: $col-width;
+    }
+    .push-#{$i} {
+        margin-left: $col-width;
+    }
+}
+
+@media #{$breakpoint-sm} {
+    .wrapper {
+        width: 95%;
+        max-width: $max-width;
+    }
+    @for $i from 1 through $cols / 2 {
+        $col-width: 100% / $cols * $i - 2 * $gutter;
+        .column-#{$i} {
+            width: $col-width;
+        }
+    }
+
+    @for $i from $cols / 2 through $cols {
+        .column-#{$i} {
+            width: 100% - 2 * $gutter;
+        }
+    }
+
+    [class*='push-'] {
+        margin-left: 0;
+    }
+}
