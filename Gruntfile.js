@@ -67,19 +67,27 @@ module.exports = function(grunt) {
                   expand: true
             }
         },
+        // Configured to "root" and not to the src folder so that bower components can be correctly loaded
         express: {
             all: {
                 options: {
                     port: 8000,
                     hostname: "0.0.0.0",
-                    bases: '<%= path.src %>'
+                    bases: '.'
                 }
             }
         },
         open: {
             all: {
                 // Gets the port from the connect configuration
-                path: 'http://localhost:<%= express.all.options.port%>/index.html'
+                path: 'http://localhost:<%= express.all.options.port%>/src/index.html'
+            }
+        },
+        wiredep: {
+            task: {
+                src: [
+                    '<%= path.src %>/**/*.html'
+                ]
             }
         }
     });
@@ -94,8 +102,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-wiredep');
 
-    grunt.registerTask('dev', ['jshint', 'sass', 'concat', 'express', 'open', 'watch']);
-    grunt.registerTask('build', ['clean', 'sass', 'concat', 'uglify', 'cssmin', 'clean', 'copy', 'watch']);
+    grunt.registerTask('dev', ['jshint', 'sass', 'concat', 'wiredep', 'express', 'open', 'watch']);
+    grunt.registerTask('build', ['clean', 'sass', 'concat', 'uglify', 'cssmin', 'wiredep', 'copy', 'watch']);
 
 };
