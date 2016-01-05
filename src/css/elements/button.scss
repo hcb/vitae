@@ -1,0 +1,15 @@
+// Button stylings
+.btn {
+    border: 2px solid $white;
+    color: $white;
+    background-color: transparent;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1em;
+
+    &.btn--green {
+        border-color: $darkgreen;
+        color: $darkgreen;
+    }
+}
