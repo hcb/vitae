@@ -3,7 +3,11 @@
 @import 'config/fonts.scss';
 @import 'config/grid.scss';
 
-@import 'hero.scss';
+
+
+@import 'sections/hero.scss';
+@import 'sections/info.scss';
+@import 'sections/order.scss';
 
 body {
     margin: 0;
