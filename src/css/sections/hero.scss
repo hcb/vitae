@@ -1,0 +1,37 @@
+// Hero
+.section {
+    padding: 5em 0;
+}
+
+.hero {
+    background-image: url(../static/vitae-hero.jpg);
+    background-position: 100% center;
+    background-attachment: fixed;
+    height: 475px;
+
+    color: $white;
+
+    .hero__logo {
+        height:145px;
+        width: 309px;
+        background-image: url(../static/logo.png);
+        background-repeat: no-repeat;
+        // hide text
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .hero__tagline {
+        font-size: 150%;
+        padding: 2em 0;
+    }
+}
+
+.footer {
+    padding: 2em 0;
+    height: 150px;
+    background-image: url(../static/vitae-hero.jpg);
+    background-position: 50% 15%;
+    background-attachment: fixed;
+}

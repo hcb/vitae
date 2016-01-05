@@ -1,0 +1,88 @@
+// Order section
+.order {
+    background-color: $lightgray;
+
+    .order-form {
+        padding-top: 2em;
+
+        h4 {
+            text-transform: uppercase;
+            border-bottom: 1px solid $darkgray;
+        }
+
+        .order-form__bottle-size {
+            h4 {
+                margin-bottom: 1em;
+            }
+        }
+
+        .order-form__product-description {
+            padding-bottom: 3em;
+        }
+
+        label {
+            display: block;
+            margin-top: 0.5em;
+        }
+        label > span {
+            display: block;
+        }
+
+        input {
+            &[type=radio] {
+                margin: 0.75em;
+            }
+
+            &[type=text] {
+            width: 95%;
+            border: none;
+            padding: 0.5em 0.1em 0.5em 0.25em;
+            margin: 0.3em 0;
+
+                &.order-form__street-address {
+                    width: 97%;
+                }
+            }
+            transition: background-color 0.5s;
+            -webkit-transition: background-color 0.5s;
+            &:focus {
+                outline: none;
+                background-color: $paleyellow;
+            }
+        }
+    }
+
+    .order__summary {
+
+        table {
+            margin: 0 auto;
+
+            th {
+                text-align: left;
+            }
+
+            .order__summary__total {
+                border-top: 1px solid $darkgray;
+                font-size: 135%;
+            }
+            th,
+            tr {
+                margin: 0.25em;
+                width: 50%;
+            }
+
+            td {
+                padding: 0.4em;
+            }
+
+        }
+    }
+
+    .order__summary {
+        background: rgba(255,255,255,0.25);
+        padding: 1em 1.5em;
+    }
+    .order__purchase__btn {
+        margin: 1em auto;
+    }
+}
