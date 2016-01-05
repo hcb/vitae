@@ -1,5 +1,4 @@
 // Grid
-
 // Variables
 $cols: 12;
 $gutter: 0.75%;
@@ -23,9 +22,13 @@ $max-width: 970px;
     }
 }
 
+// Handle images in grid
+img {
+    max-width: 100%;
+    height: auto;
+}
 
-// Grid
-
+// Grid calculations
 .container,
 .row {
     @extend %clearfix;
