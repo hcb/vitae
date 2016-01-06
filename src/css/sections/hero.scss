@@ -12,11 +12,22 @@
 .hero {
     background-image: url(../static/vitae-hero.jpg);
     background-position: 100% center;
+    transition: background-position;
     background-attachment: fixed;
-    height: 475px;
+
+    overflow: hidden;
     @include text-shadow;
 
     color: $white;
+
+    &.section {
+        padding: 0;
+    }
+    .hero__wrap {
+        background: rgba(0, 0, 0, 0.35);
+        padding: 4em 2em;
+        height: 101%;
+    }
 
     .hero__logo {
         height: 135px;
@@ -33,6 +44,16 @@
         font-size: 150%;
         padding: 2em 0;
     }
+
+    .hero__buttons {
+        a {
+            // Make the buttons appear at their intended size and with intended style
+            display: block;
+            &.btn {
+                text-decoration: none;
+            }
+        }
+    }
 }
 
 .footer {
@@ -41,4 +62,7 @@
     background-image: url(../static/vitae-hero.jpg);
     background-position: 50% 15%;
     background-attachment: fixed;
+    color: $white;
+    @include text-shadow;
+    text-align: center;
 }
