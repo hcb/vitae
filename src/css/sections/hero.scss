@@ -1,4 +1,10 @@
 // Hero
+
+// Mix-ins
+@mixin text-shadow {
+    text-shadow: 2px 2px 5px $black;
+}
+
 .section {
     padding: 5em 0;
 }
@@ -8,6 +14,7 @@
     background-position: 100% center;
     background-attachment: fixed;
     height: 475px;
+    @include text-shadow;
 
     color: $white;
 
