@@ -10,4 +10,4 @@ Vitae is a modern interpretation of Vin Vitae, also know as the Wine of Life, wh
 4. With the dependencies in place, run the command `grunt dev`. This will start an Express server and open the project in your browser.
 
 ##Trouble?
-If my grunt skills have only caused you grief, please check out this [live version of the Vitae landing page](http://cakehat.com/vitae). Please let me know what difficulties you encountered by sending an [email](mailto:hillarycbarth@gmail.com).
+If my grunt skills have only caused you grief, please check out this [live version of the Vitae landing page](http://cakehat.com/vitae/dist/). Please let me know what difficulties you encountered by sending an [email](mailto:hillarycbarth@gmail.com).
