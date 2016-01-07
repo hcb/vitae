@@ -2,15 +2,13 @@
 @import 'config/colors.scss';
 @import 'config/fonts.scss';
 @import 'config/grid.scss';
+@import 'config/defaults.scss';
 
-
+// Commonly shared elements/components
 @import 'elements/button.scss';
 
+// Site specific features
+@import 'sections/other.scss';
 @import 'sections/hero.scss';
 @import 'sections/info.scss';
 @import 'sections/order.scss';
-
-body {
-    margin: 0;
-    padding: 0;
-}
