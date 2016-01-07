@@ -34,7 +34,7 @@ module.exports = function(grunt) {
             },
             build: {
                 src: ['<%= path.src %>/**/*.js'],
-                dest: '<%= path.dist %>/main.js'
+                dest: '<%= path.dist %>/js/main.js'
             }
         },
         uglify: {
@@ -50,7 +50,7 @@ module.exports = function(grunt) {
         cssmin: {
             build: {
                 files: {
-                    '<%= path.dist %>/css/main.min.css': [ '<%= path.dist %>/css/main.css' ]
+                    '<%= path.dist %>/css/main.min.css': [ '<%= path.dist %>/css/main.css',  ]
                 }
             }
         },
@@ -60,6 +60,12 @@ module.exports = function(grunt) {
             }
         },
         copy: {
+            bower: {
+                cwd: 'bower_components',
+                src: ['**/*.js', '**/*.css'],
+                dest: '../<%= path.dist %>',
+                expand: true
+            },
             build: {
                   cwd: '<%= path.src %>',
                   src: ['**/*', '!**/*.scss'],
@@ -105,6 +111,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-wiredep');
 
     grunt.registerTask('dev', ['jshint', 'sass', 'concat', 'wiredep', 'express', 'open', 'watch']);
-    grunt.registerTask('build', ['clean', 'sass', 'concat', 'uglify', 'cssmin', 'wiredep', 'copy', 'watch']);
+    grunt.registerTask('build', ['clean', 'sass', 'concat', 'uglify', 'cssmin', 'wiredep', 'copy', 'copy:bower']);
 
 };
