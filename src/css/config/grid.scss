@@ -2,11 +2,8 @@
 // Variables
 $cols: 12;
 $gutter: 0.75%;
-
 $breakpoint-sm: "only screen and (max-width: 767px)";
 $breakpoint-lg: "only screen and (min-width: 768px)";
-
-
 $max-width: 970px;
 
 // Clearfix
@@ -45,7 +42,6 @@ img {
     width: 100%;
     margin: 0 $gutter;
 }
-
 
 @for $i from 1 through $cols {
     $col-width: 100% / $cols * $i - 2 * $gutter;

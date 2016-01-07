@@ -52,6 +52,10 @@
         }
     }
 
+    .order-form__payment {
+        margin-top: $spacing-md;
+    }
+
     .order__summary {
 
         table {
@@ -67,12 +71,12 @@
             }
             th,
             tr {
-                margin: 0.25em;
+                margin: $spacing-sm;
                 width: 50%;
             }
 
             td {
-                padding: 0.4em;
+                padding: $spacing-md;
             }
 
         }
@@ -84,5 +88,6 @@
     }
     .order__purchase__btn {
         margin: 1em auto;
+        display: block;
     }
 }
