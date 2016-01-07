@@ -1,0 +1,25 @@
+// Other Sections
+
+// Mix-ins
+@mixin text-shadow {
+    text-shadow: 2px 2px 5px $black;
+}
+
+.section {
+    padding: $spacing-xl 0;
+}
+
+.footer {
+    padding: $spacing-lg 0;
+    background-image: url(../static/vitae-hero.jpg);
+    background-position: 50% 15%;
+    background-attachment: fixed;
+    color: $white;
+    @include text-shadow;
+    text-align: center;
+
+    p {
+        background: rgba(0, 0, 0, 0.5);
+        padding: $spacing-md;
+    }
+}
