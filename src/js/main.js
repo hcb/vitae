@@ -14,9 +14,9 @@ $(document).ready(function(){
 
         $('#order__summary__total').text('$' + total);
         $('#order__summary__tax').text('$' + tax + '.00');
-        $('#order-form .hidden').show();
         $('#order__summary__price').text('$' + price);
         $('#order__summary__item').text(item);
+        $('#order-form .hidden').show();
     });
 });
 
