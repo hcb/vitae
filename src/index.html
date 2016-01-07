@@ -59,118 +59,119 @@
             </div>
         </div>
         <div class="order section" id="order">
-            <div class="container order-form" id="order-form">
-                <div class="row order-form__product-description">
-                    <div class="column-2"><img src="static/product-image.png" /></div>
-                    <div class="column-7">
-                        <h4>VITAE</h4>
-                        <p>Crystal bottle</p>
-                        <p>VITAE contains all the good properties of all the well known sarsaparillas, blood purifiers, regulators for men and women, nerve tonics, etc. without their disagreeable and distasteful ingredients. It is an ideal tonic and strengthener for all, combining the best elements of similar medicines with distinctive and peculiar advantages of its own that make it enjoyed and appreciated by all who try it.</p>
-                    </div>
-                    <div class="column-3  order-form__bottle-size">
-                        <h4>SELECT YOUR SIZE</h4>
-                        <label for="order-form__bottle-size-sm">
-                            <input id="order-form__bottle-size-sm" name="order-form__bottle-size" type="radio" data-price="25.99">8 ounces
-                        </label>
-                        <label for="order-form__bottle-size-lg">
-                            <input id="order-form__bottle-size-lg" name="order-form__bottle-size" type="radio" data-price="56.99">24 ounces
-                        </label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="column-6">
-                        <div class="row">
-
-                            <div class="column-12"><h4>Your information</h4></div>
-                            <div class="column-6">
-                                <label for="order-form__first-name">
-                                    <span>First Name</span>
-                                    <input type="text" id="order-form__first-name" placeholder="First Name" />
-                                </label>
-                            </div>
-
-                            <div class="column-6">
-                                <label for="order-form__last-name">
-                                    <span>Last Name</span>
-                                    <input type="text" id="order-form__last-name" placeholder="Last Name" />
-                                </label>
-                            </div>
+            <div class="container">
+                <form id="order-form" class=" order-form">
+                    <div class="row order-form__product-description">
+                        <div class="column-2"><img src="static/product-image.png" /></div>
+                        <div class="column-7">
+                            <h4>VITAE</h4>
+                            <p>Crystal bottle</p>
+                            <p>VITAE contains all the good properties of all the well known sarsaparillas, blood purifiers, regulators for men and women, nerve tonics, etc. without their disagreeable and distasteful ingredients. It is an ideal tonic and strengthener for all, combining the best elements of similar medicines with distinctive and peculiar advantages of its own that make it enjoyed and appreciated by all who try it.</p>
                         </div>
-                        <!-- Address -->
-                        <div class="row">
-                            <div class="column-12">
-                            <label for="order-form__street-address-1">
-                                <span>Street Address</span>
-                                <input type="text" class="order-form__street-address" id="order-form__street-address-1" placeholder="Street Address line 1" />
+                        <div class="column-3  order-form__bottle-size">
+                            <h4>SELECT YOUR SIZE</h4>
+                            <label for="order-form__bottle-size-sm">
+                                <input id="order-form__bottle-size-sm" name="order-form__bottle-size" type="radio" data-price="25.99" data-itemname="VITAE - 8oz">8 ounces
                             </label>
-                            <label for="order-form__address-2">
-                                <input type="text" class="order-form__street-address" id="order-form__street-address-2" placeholder="Street Address line 2" />
+                            <label for="order-form__bottle-size-lg">
+                                <input id="order-form__bottle-size-lg" name="order-form__bottle-size" type="radio" data-price="56.99" data-itemname="VITAE - 24oz">24 ounces
                             </label>
-                            </div>
                         </div>
-                        <div class="row">
-                            <div class="column-7">
-                                <label for="order-form__city">
-                                    <span>City</span>
-                                    <input type="text" id="order-form__street-address-1" placeholder="City" />
-                                </label>
-                            </div>
-                            <div class="column-2">
-                                <label for="order-form__state">
-                                    <span>State</span>
-                                    <input type="text" id="order-form__state" placeholder="State" />
-                                </label>
-                            </div>
-                            <div class="column-3">
-                                <label for="order-form__zip-code">
-                                    <span>Zip</span>
-                                    <input type="text" id="order-form__zip-code" placeholder="Zip code" />
-                                </label>
-                            </div>
-                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column-6">
+                            <div class="row">
+                                <div class="column-12"><h4>Your information</h4></div>
+                                <div class="column-6">
+                                    <label for="order-form__first-name">
+                                        <span>First Name</span>
+                                        <input type="text" id="order-form__first-name" placeholder="First Name" />
+                                    </label>
+                                </div>
 
-                        <div class="order-form__payment">
-                            <div class="row">
-                                <div class="column-12"><h4>Payment</h4></div>
+                                <div class="column-6">
+                                    <label for="order-form__last-name">
+                                        <span>Last Name</span>
+                                        <input type="text" id="order-form__last-name" placeholder="Last Name" />
+                                    </label>
+                                </div>
                             </div>
+                            <!-- Address -->
                             <div class="row">
-                                <label for="order-form__payment__credit-card">
-                                    Credit Card Number
-                                        <input type="text" maxlength="16" placeholder="0000-0000-0000-0000">
+                                <div class="column-12">
+                                <label for="order-form__street-address-1">
+                                    <span>Street Address</span>
+                                    <input type="text" class="order-form__street-address" id="order-form__street-address-1" placeholder="Street Address line 1" />
                                 </label>
+                                <label for="order-form__address-2">
+                                    <input type="text" class="order-form__street-address" id="order-form__street-address-2" placeholder="Street Address line 2" />
+                                </label>
+                                </div>
                             </div>
                             <div class="row">
-                                <div class="column-4"><label for="order-form__payment__credit-card--exp-month">Expiration Month</label><input id="order-form__payment__credit-card--exp-month" type="text" placeholder="01" maxlength="2"></div>
-                                <div class="column-4"><label for="order-form__payment__credit-card--exp-year">Expiration Year</label><input id="order-form__payment__credit-card--exp-year" type="text" placeholder="2020" maxlength="4"></div>
-                                <div class="column-4"><label for="order-form__payment__credit-card--cvc">Security Code / CVC</label><input type="text" placeholder="000" maxlength="3"></div>
+                                <div class="column-7">
+                                    <label for="order-form__city">
+                                        <span>City</span>
+                                        <input type="text" id="order-form__street-address-1" placeholder="City" />
+                                    </label>
+                                </div>
+                                <div class="column-2">
+                                    <label for="order-form__state">
+                                        <span>State</span>
+                                        <input type="text" id="order-form__state" placeholder="State" />
+                                    </label>
+                                </div>
+                                <div class="column-3">
+                                    <label for="order-form__zip-code">
+                                        <span>Zip</span>
+                                        <input type="text" id="order-form__zip-code" placeholder="Zip code" />
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="order-form__payment">
+                                <div class="row">
+                                    <div class="column-12"><h4>Payment</h4></div>
+                                </div>
+                                <div class="row">
+                                    <label for="order-form__payment__credit-card">
+                                        Credit Card Number
+                                            <input type="text" maxlength="16" placeholder="0000-0000-0000-0000">
+                                    </label>
+                                </div>
+                                <div class="row">
+                                    <div class="column-4"><label for="order-form__payment__credit-card--exp-month">Expiration Month</label><input id="order-form__payment__credit-card--exp-month" type="text" placeholder="01" maxlength="2"></div>
+                                    <div class="column-4"><label for="order-form__payment__credit-card--exp-year">Expiration Year</label><input id="order-form__payment__credit-card--exp-year" type="text" placeholder="2020" maxlength="4"></div>
+                                    <div class="column-4"><label for="order-form__payment__credit-card--cvc">Security Code / CVC</label><input type="text" placeholder="000" maxlength="3"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column-4 push-2">
+                            <div id="order__summary" class="order__summary">
+                                <table>
+                                    <th colspan="2" class="order__summary__heading"><h4>Your Order</h4></th>
+                                    <tr class="order__summary__item">
+                                        <td id="order__summary__item"></td>
+                                        <td id="order__summary__price"></td>
+                                    </tr>
+                                    <tr class="order__summary__item">
+                                        <td class="hidden">Estimated Tax</td>
+                                        <td id="order__summary__tax"></td>
+                                    </tr>
+
+                                    <tr class="order__summary__total">
+                                        <td>Total</td>
+                                        <td id="order__summary__total"></td>
+                                    </tr>
+                                </table>
+
+                                <div class="order__purchase">
+                                    <button class="btn order__purchase__btn btn--green">Purchase</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="column-4 push-2">
-                        <div id="order__summary" class="order__summary">
-                            <table>
-                                <th colspan="2" class="order__summary__heading"><h4>Your Order</h4></th>
-                                <tr class="order__summary__item">
-                                    <td>Item</td>
-                                    <td>Price</td>
-                                </tr>
-                                <tr class="order__summary__item">
-                                    <td>Estimate Tax</td>
-                                    <td>Price</td>
-                                </tr>
-
-                                <tr id="order__summary__total" class="order__summary__total">
-                                    <td>Total</td>
-                                    <td>Price</td>
-                                </tr>
-                            </table>
-
-                            <div class="order__purchase">
-                                <button class="btn order__purchase__btn btn--green">Purchase</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
         <footer class="footer">
